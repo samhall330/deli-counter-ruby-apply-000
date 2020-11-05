@@ -5,7 +5,7 @@ def line(deli)
   if deli == []
     puts "The line is currently empty."
 
-  else deli.each do |name|
+  else deli.each do |name| #block parameter
       customers << " #{counter}. #{name}"
       counter += 1
       end
@@ -13,8 +13,8 @@ def line(deli)
     end
 end
 
-def take_a_number(line, new_customer)
-  line << new_customer
+def take_a_number(deli, new_customer)
+  deli << new_customer
   puts "Welcome, #{new_customer}. You are number #{line.length} in line."
 end
 
